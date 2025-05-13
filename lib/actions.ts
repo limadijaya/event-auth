@@ -1,9 +1,10 @@
 "use server";
-import { RegisterSchema, SignInSchema } from "@/lib/zod";
+// import { RegisterSchema, SignInSchema } from "@/lib/zod";
+import { RegisterSchema } from "@/lib/zod";
 import { hashSync } from "bcrypt-ts";
 import { prisma } from "@/lib/prisma";
 import { redirect } from "next/navigation";
-import { signIn } from "@/auth";
+// import { signIn } from "@/auth";
 // import { AuthError } from "next-auth";
 // import AuthError from "next-auth";
 

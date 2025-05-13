@@ -15,7 +15,7 @@ const eslintConfig = [
 
   // Override for Prisma-generated code
   {
-    files: ["app/generated/prisma/**/*.{js,ts}"],
+    files: ["app/generated/prisma/**/*.{js,ts,d.ts}"],
     rules: {
       "@typescript-eslint/no-require-imports": "off",
       "@typescript-eslint/no-unused-vars": "off",
@@ -25,6 +25,7 @@ const eslintConfig = [
       "@typescript-eslint/no-unsafe-function-type": "off",
       "@typescript-eslint/no-this-alias": "off",
       "@typescript-eslint/no-unused-expressions": "off",
+      "@typescript-eslint/no-wrapper-object-types": "off", // ← add this
     },
   },
 ];
