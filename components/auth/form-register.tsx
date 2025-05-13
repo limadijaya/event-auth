@@ -96,7 +96,8 @@ const FormRegister = () => {
       <RegisterButton />
       <p className="text-sm font-light text-gray-500">
         Already have an account?
-        <Link href="/login">
+        {/* <Link href="/login"> */}
+        <Link href="/">
           <span className="font-medium pl-1 text-blue-600 hover:text-blue-700">
             Sign In
           </span>
