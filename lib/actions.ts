@@ -1,4 +1,5 @@
 "use server";
+
 // import { RegisterSchema, SignInSchema } from "@/lib/zod";
 import { RegisterSchema } from "@/lib/zod";
 import { hashSync } from "bcrypt-ts";
@@ -32,7 +33,8 @@ export const signUpCredentials = async (
         password: hashedPassword,
       },
     });
-  } catch (error) {
+    //} catch (error) {
+  } catch {
     return { message: "Failed to register user" };
   }
   redirect("/login");
